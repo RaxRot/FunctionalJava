@@ -22,5 +22,15 @@ public class CalculatorLambdaExample {
         Calculator divisor = (a, b) -> a / b;
         int divideResult = divisor.calculate(1, 2);
         System.out.println(divideResult);
+
+       int resultTest = calculate(2,2,(a,b) -> a * b);
+       System.out.println(resultTest);
+
+       int resultTest2 = calculate(2,2,(a,b) -> a / b);
+       System.out.println(resultTest2);
+    }
+
+    private static int calculate(int a, int b,Calculator calculator) {
+        return calculator.calculate(a, b);
     }
 }
