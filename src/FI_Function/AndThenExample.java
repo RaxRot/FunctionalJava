@@ -18,5 +18,6 @@ public class AndThenExample {
         Function<String,String>addOneSymbol=(message)->message+"a";
         int length1=addOneSymbol.andThen(stringLength).apply("John");
         System.out.println(length1);
+
     }
 }
