@@ -8,7 +8,7 @@ public class PredicateAndExample {
         //Predicate to check is string is not empty
         Predicate<String>isNotEmpty=s -> !s.isEmpty();
 
-        //Predicate to check if length is greater that 5
+        //Predicate to check if length is greater then 5
         Predicate<String>isLengthMoreFive=s -> s.length() > 5;
 
         //Combine 2 predicates
