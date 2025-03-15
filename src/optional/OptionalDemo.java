@@ -9,6 +9,9 @@ public class OptionalDemo {
         //ofNullable
         Optional<String> emailOptional1=Optional.ofNullable(email);
         emailOptional1.ifPresent(System.out::println);
+        if(emailOptional1.isPresent()){
+            System.out.println(emailOptional1.get());
+        }
 
         String result=Optional.ofNullable(email).orElse("default");
         System.out.println(result);

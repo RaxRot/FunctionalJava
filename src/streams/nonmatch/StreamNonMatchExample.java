@@ -46,5 +46,7 @@ public class StreamNonMatchExample {
 
         boolean noneMatch = employees.stream().noneMatch(employee -> employee.getName().equals("Vlad"));
         System.out.println(noneMatch);
+
+
     }
 }
